@@ -11,4 +11,4 @@ To run the code:
 3. npm start or yarn start
 
 Demo link:
-https://5f05a8db35bac9ee4326acee--hopeful-jennings-fd8205.netlify.app/
+https://hopeful-jennings-fd8205.netlify.app/
