@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import Board from "./Board";
 import StartMenu from "./StartMenu";
 import styles from "./Snake.module.scss";

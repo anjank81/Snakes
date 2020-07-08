@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import styles from "./Snake.module.scss";
 export default class StartMenu extends React.Component {
   render() {

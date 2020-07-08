@@ -1,11 +1,7 @@
-import React, { Component } from "react";
+import React from "react";
 import Player from "./Player";
 import styles from "./Snake.module.scss";
 export default class Tile extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     let tileType = "";
 

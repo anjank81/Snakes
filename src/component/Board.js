@@ -1,5 +1,4 @@
-import React, { Component } from "react";
-import StartMenu from "./StartMenu";
+import React from "react";
 import Tile from "./Tile";
 import styles from "./Snake.module.scss";
 export default class Board extends React.Component {
@@ -97,9 +96,11 @@ export default class Board extends React.Component {
 
     this.snakes.map((snake) => {
       boardTiles[snake.from - 1].to = snake.to;
+      return console.log("snakes and ladders");
     });
     this.ladders.map((ladder) => {
       boardTiles[ladder.from - 1].to = ladder.to;
+      return console.log("snakes and ladders");
     });
     this.props.players.map((player) => {
       boardTiles[player.boardLocation - 1].players.push(player);
@@ -122,6 +123,7 @@ export default class Board extends React.Component {
         this.props.movePlayer(player.playerNum, toGo);
       } else {
       }
+      return console.log("snakes and ladders");
     });
 
     return boardTiles;
@@ -133,7 +135,7 @@ export default class Board extends React.Component {
 
     let lastActionText = "Press roll to play";
 
-    if (this.props.lastRoll != 0) {
+    if (this.props.lastRoll !== 0) {
       lastActionText = this.props.lastRoll;
     }
 
